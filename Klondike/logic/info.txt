@@ -1,0 +1,1 @@
+Hier kommt die Logik für neue Gebäude hin und neue Objekte, die in die Mod eingefügt werden.
