@@ -4,10 +4,10 @@ data:extend({
 		name = "salt-recipe",
 		category = "chemistry",
 		enabled = true,
-		energy_required = 5,
+		energy_required = 10,
 		ingredients =
 		{
-			{type="fluid", name="water", amount=100},			
+			{type="fluid", name="water", amount=1500},			
 		},
 		result = "salt-item",
 	}
