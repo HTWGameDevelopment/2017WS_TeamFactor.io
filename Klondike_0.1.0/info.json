@@ -1,8 +1,10 @@
  {
-     "name": "Klondikes",
+     "name": "Klondike",
      "version": "0.1.0",
      "title": "Klondike",
      "author": "Team_Factor.io",
+     "contact": "",
+     "homepage": "https://github.com/HTWGameDevelopment/2017WS_TeamFactor.io",
      "dependencies": ["base >= 0.15"],
      "factorio_version": "0.15",
      "description": "This mod gives you more a feeling of survival. It adds gold and hunger."
