@@ -19,7 +19,7 @@ data:extend({
         		recipe = "goldwire-recipe"
 			},
 		},
-		prerequisites = {"automation-2","mining-productivity-7"},
+		prerequisites = {"automation-2","mining-productivity-8"},
 		unit =
     	{
       		count = 300,
