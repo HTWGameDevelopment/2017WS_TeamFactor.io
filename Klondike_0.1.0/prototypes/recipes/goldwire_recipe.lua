@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "goldwire-recipe",
 		category = "advanced-crafting",
-		enabled = true,
+		enabled = false,
 		energy_required = 20,
 		ingredients =
 		{

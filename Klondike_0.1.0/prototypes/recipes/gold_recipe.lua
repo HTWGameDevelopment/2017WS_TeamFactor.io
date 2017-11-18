@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "gold-recipe",
 		category = "crafting-with-fluid",
-		enabled = true,
+		enabled = false,
 		energy_required = 2,
 		ingredients =
 		{

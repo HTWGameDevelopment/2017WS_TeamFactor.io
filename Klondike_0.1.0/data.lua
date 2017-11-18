@@ -9,3 +9,5 @@ require ("prototypes.recipes.salt_recipe")
 require ("prototypes.recipes.gold_recipe")
 require ("prototypes.recipes.goldbar_recipe")
 require ("prototypes.recipes.goldwire_recipe")
+
+require ("prototypes.technologies.gold_technology")
