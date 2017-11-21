@@ -20,7 +20,7 @@ data:extend({
         		amount = 1
       		},
       		{
-       			name = "stone",
+       			name = "kies-item",
         		probability = 0.95,
         		amount = 2
       		}
