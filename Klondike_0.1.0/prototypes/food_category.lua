@@ -13,10 +13,16 @@ data:extend  {
     order = "a", --The order of the row from top to bottom, row "a" would be above row "b"
   },
   {
-    type = "item-subgroup", --A Row in the group
+    type = "item-subgroup", --B Row in the group
+    name = "ingredience", -- The name of the ROW
+    group = "food", --The item-group this subgroup belongs too
+    order = "b", --The order of the row from top to bottom, row "b" would be above row "c"
+  },
+  {
+    type = "item-subgroup", --C Row in the group
     name = "cookedfood", -- The name of the ROW
     group = "food", --The item-group this subgroup belongs too
-    order = "b", --The order of the row from top to bottom, row "a" would be above row "b"
+    order = "c", --The order of the row from top to bottom, row "c" would be above row "d"
   },  
 }
 

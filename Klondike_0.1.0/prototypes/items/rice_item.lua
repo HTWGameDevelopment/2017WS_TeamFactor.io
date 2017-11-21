@@ -4,7 +4,7 @@ data:extend({
 		name = "rice-item",
 		icon = "__Klondike__/graphics/icons/rice.png",
 		flags = {"goes-to-main-inventory"},
-		subgroup = "raw-material",		
+		subgroup = "ingredience",		
 		stack_size = 50
 	}
 })

@@ -4,7 +4,7 @@ data:extend({
 		name = "salt-item",
 		icon = "__Klondike__/graphics/icons/salt.png",
 		flags = {"goes-to-main-inventory"},
-		subgroup = "rawfood",
+		subgroup = "ingredience",
 		stack_size = 50
 	}
 })
