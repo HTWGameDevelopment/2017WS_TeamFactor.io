@@ -5,7 +5,7 @@ data:extend({
 		icon = "__Klondike__/graphics/icons/goldwire.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "intermediate-product",
-		order = "a-b[goldwire]",		
+		order = "b-a[goldwire]",		
 		stack_size = 200
 	}
 })
