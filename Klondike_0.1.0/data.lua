@@ -1,4 +1,5 @@
 require ("prototypes.food_category")
+require ("prototypes.recipe_category")
 
 require ("prototypes.items.salt_item")
 require ("prototypes.items.gold_item")
