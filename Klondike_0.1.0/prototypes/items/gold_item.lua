@@ -4,7 +4,8 @@ data:extend({
 		name = "gold-item",
 		icon = "__Klondike__/graphics/icons/gold.png",
 		flags = {"goes-to-main-inventory"},
-		subgroup = "raw-material",		
+		subgroup = "raw-resource",
+		order = "z[gold]",		
 		stack_size = 50
 	}
 })
