@@ -30,3 +30,5 @@ require ("prototypes.recipes.nature_science_pack_recipe")
 require ("prototypes.recipes.mill_recipe")
 
 require ("prototypes.technologies.gold_technology")
+
+require ("prototypes.entities.mill")

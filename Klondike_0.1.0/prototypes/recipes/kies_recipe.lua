@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kies-recipe",
-		category = "advanced-crafting",
+		category = "mill",
 		enabled = true,
 		energy_required = 2,
 		ingredients =
