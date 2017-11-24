@@ -7,7 +7,7 @@ data:extend({
 		energy_required = 2,
 		ingredients =
 		{
-			{"stone", 5},
+			{"kies-item", 5},
 			{type="fluid", name="water", amount=200},			
 		},
 		icon = "__Klondike__/graphics/icons/gold.png",
