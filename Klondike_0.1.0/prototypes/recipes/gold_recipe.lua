@@ -7,8 +7,9 @@ data:extend({
 		energy_required = 2,
 		ingredients =
 		{
-			{"kies-item", 5},
-			{type="fluid", name="water", amount=200},			
+			{"kies-item", 6},
+			{"sand-item", 5},
+			{type="fluid", name="water", amount=500},			
 		},
 		icon = "__Klondike__/graphics/icons/gold.png",
 		subgroup = "raw-material",
@@ -16,12 +17,17 @@ data:extend({
     	{
       		{
         		name = "gold-item",
-        		probability = 0.05,
+        		probability = 0.02,
+        		amount = 1
+      		},
+      		{
+        		name = "sand-item",
+        		probability = 0.3,
         		amount = 1
       		},
       		{
        			name = "kies-item",
-        		probability = 0.95,
+        		probability = 0.68,
         		amount = 2
       		}
     	}
