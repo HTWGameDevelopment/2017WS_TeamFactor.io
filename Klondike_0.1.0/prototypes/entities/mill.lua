@@ -27,8 +27,8 @@ data:extend(
     },
     energy_usage = "1200kW",
     ingredient_count = 4,
-	  animation ={
-      layers={
+	  animation = {
+      layers = {
         {
           filename = "__Klondike__/graphics/entities/mill.png",
           width = 256,

@@ -2,7 +2,7 @@ function gardenlimitation()
 	return 
       	{
         	"riceplant-recipe",
-        	"soja-recipe"
+        	"soy-recipe"
       	}
 end
 
