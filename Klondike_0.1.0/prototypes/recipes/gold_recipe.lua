@@ -4,7 +4,7 @@ data:extend({
 		name = "gold-recipe",
 		category = "crafting-with-fluid",
 		enabled = false,
-		energy_required = 2,
+		energy_required = 8,
 		ingredients =
 		{
 			{"kies-item", 6},

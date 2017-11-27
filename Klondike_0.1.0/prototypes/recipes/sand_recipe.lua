@@ -4,7 +4,7 @@ data:extend({
 		name = "sand-recipe",
 		category = "mill",
 		enabled = true,
-		energy_required = 2,
+		energy_required = 3,
 		ingredients =
 		{
 			{"kies-item", 1},

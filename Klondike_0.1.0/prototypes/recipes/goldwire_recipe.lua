@@ -4,7 +4,7 @@ data:extend({
 		name = "goldwire-recipe",
 		category = "advanced-crafting",
 		enabled = false,
-		energy_required = 20,
+		energy_required = 5,
 		ingredients =
 		{
 			{"goldbar-item", 1},
