@@ -3,9 +3,9 @@ require ("logic.color_function")
 require ("logic.gardenlimitation_function")
 
 --categories
-require ("prototypes.food_category")
-require ("prototypes.recipe_category")
-require ("prototypes.module_category")
+require ("prototypes.categories.food_category")
+require ("prototypes.categories.recipe_category")
+require ("prototypes.categories.module_category")
 
 --items
 require ("prototypes.items.salt_item")
