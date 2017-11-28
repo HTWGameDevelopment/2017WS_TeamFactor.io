@@ -1,9 +1,3 @@
-function round(num, numDecimalPlaces)
-  local mult = 10^(numDecimalPlaces or 0)
-  local x = 1/256*num
-  return math.floor(x * mult + 0.5) / mult
-end
-
 data:extend({
 	{
 		type = "recipe",
@@ -21,9 +15,9 @@ data:extend({
 		result = "liquitfertilizer-item",
 		crafting_machine_tint =
     	{
-      		primary = {r = round(50, 2), g = round(68, 2), b = round(2, 2), a = 0.00}, -- #c8670000
-      		secondary = {r = round(83, 2), g = round(44, 2), b = round(8, 2), a = 0.00}, -- #cacd9a00
-      		tertiary = {r = round(38, 2), g = round(67, 2), b = round(12, 2), a = 0.00}, -- #d48c0000
+      		primary = {r = color(50), g = color(68), b = color(2), a = 0.00},
+      		secondary = {r = color(83), g = color(44), b = color(8), a = 0.00},
+      		tertiary = {r = color(38), g = color(67), b = color(12), a = 0.00},
     	} 	
 	}
 })

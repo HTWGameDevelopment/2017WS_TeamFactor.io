@@ -1,3 +1,5 @@
+require ("logic.color_function")
+
 require ("prototypes.food_category")
 require ("prototypes.recipe_category")
 require ("prototypes.module_category")
