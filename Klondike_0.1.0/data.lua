@@ -1,9 +1,13 @@
+--functions
 require ("logic.color_function")
+require ("logic.gardenlimitation_function")
 
+--categories
 require ("prototypes.food_category")
 require ("prototypes.recipe_category")
 require ("prototypes.module_category")
 
+--items
 require ("prototypes.items.salt_item")
 require ("prototypes.items.gold_item")
 require ("prototypes.items.goldbar_item")
@@ -23,8 +27,10 @@ require ("prototypes.items.mill_item")
 require ("prototypes.items.fertilizer_item")
 require ("prototypes.items.liquitfertilizer_item")
 
+--fluids
 require ("prototypes.fluids.soysouce_fluid")
 
+--recipes
 require ("prototypes.recipes.salt_recipe")
 require ("prototypes.recipes.gold_recipe")
 require ("prototypes.recipes.goldbar_recipe")
@@ -43,6 +49,8 @@ require ("prototypes.recipes.mill_recipe")
 require ("prototypes.recipes.fertilizer_recipe")
 require ("prototypes.recipes.liquitfertilizer_recipe")
 
+--technologies
 require ("prototypes.technologies.gold_technology")
 
+--entities
 require ("prototypes.entities.mill")
