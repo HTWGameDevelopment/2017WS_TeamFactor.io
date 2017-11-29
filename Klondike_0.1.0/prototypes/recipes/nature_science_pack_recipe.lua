@@ -9,7 +9,7 @@ data:extend({
 		{
 			{"humus-item", 3},			
 			{"raw-wood", 1},
-			{"garden-item", 1},
+			{"greenhouse-item", 1},
 		},
 		result_count = 1,		
 		result = "nature-science-pack"    	

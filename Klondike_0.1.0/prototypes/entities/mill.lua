@@ -25,7 +25,7 @@ data:extend(
       usage_priority = "secondary-input",
       emissions = 0.33 / 3.5
     },
-    energy_usage = "1200kW",
+    energy_usage = "750kW",
     ingredient_count = 4,
 	  animation = {
       layers = {
