@@ -8,7 +8,8 @@ data:extend({
 		ingredients =
 		{
 			{"gold-item", 5},
-		},		
+		},
+		result_count = 1,	
 		result = "goldbar-item"    	
 	}
 })
