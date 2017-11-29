@@ -10,7 +10,7 @@ data:extend(
     max_health = 300,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-
+    
     fluid_boxes =
     {
       {
@@ -38,18 +38,20 @@ data:extend(
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     module_specification =
     {
-      module_slots = 4
+      module_slots = 3
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {"speed", "productivity", "pollution"},
     crafting_categories = {"greenhouse"},
     crafting_speed = 1,
     energy_source =
     {
-      type = "electric",
-      usage_priority = "secondary-input",
-      emissions = 0.25
+      type = "burner",
+      fuel_category = "biological",
+      effectivity = 1,
+      emissions = 0.001,
+      fuel_inventory_size = 1,
     },
-    energy_usage = "1000kW",
+    energy_usage = "400kW",
     ingredient_count = 5,
     animation ={
       layers={

@@ -8,6 +8,7 @@ require ("logic.greenhousepipepictures_function")
 require ("prototypes.categories.food_category")
 require ("prototypes.categories.recipe_category")
 require ("prototypes.categories.module_category")
+require ("prototypes.categories.fuel_category")
 
 --items
 require ("prototypes.items.salt_item")
