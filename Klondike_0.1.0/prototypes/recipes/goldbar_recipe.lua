@@ -10,6 +10,6 @@ data:extend({
 			{"gold-item", 5},
 		},
 		result_count = 1,	
-		result = "goldbar-item"    	
+		result = "goldbar-item"   	
 	}
 })
