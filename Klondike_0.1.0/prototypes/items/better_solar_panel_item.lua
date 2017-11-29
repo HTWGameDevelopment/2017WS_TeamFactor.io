@@ -1,11 +1,12 @@
 data:extend({
 	{
 		type = "item",
-		name = "better-solar-panel",
+		name = "better-solar-panel-item",
 		icon = "__Klondike__/graphics/icons/better-solar-panel.png",
 		flags = {"goes-to-main-inventory"},
+		order = "z[better-solar-panel]",
 		subgroup = "energy",
-		order = "z[better-solar-panel]",		
+		place_result = "better-solar-panel",		
 		stack_size = 50
 	}
 })

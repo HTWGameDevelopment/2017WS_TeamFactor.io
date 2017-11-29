@@ -5,7 +5,7 @@ data:extend(
     name = "better-solar-panel",
     icon = "__Klondike__/graphics/icons/better-solar-panel.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "better-solar-panel"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "better-solar-panel-item"},
     max_health = 200,
     corpse = "big-remnants",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
@@ -22,6 +22,6 @@ data:extend(
       width = 104,
       height = 96
     },
-    production = "80kW"  
+    production = "80kW",
   },
 })

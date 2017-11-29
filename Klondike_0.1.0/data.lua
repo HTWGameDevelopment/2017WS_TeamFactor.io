@@ -27,6 +27,8 @@ require ("prototypes.items.mill_item")
 require ("prototypes.items.fertilizer_item")
 require ("prototypes.items.liquitfertilizer_item")
 require ("prototypes.items.gold_statue_item")
+require ("prototypes.items.fast_processing_unit_item")
+require ("prototypes.items.better_solar_panel_item")
 
 --fluids
 require ("prototypes.fluids.soysouce_fluid")
@@ -50,6 +52,7 @@ require ("prototypes.recipes.mill_recipe")
 require ("prototypes.recipes.fertilizer_recipe")
 require ("prototypes.recipes.liquitfertilizer_recipe")
 require ("prototypes.recipes.gold_statue_recipe")
+require ("prototypes.recipes.better_solar_panel_recipe")
 
 --technologies
 require ("prototypes.technologies.gold_technology")
@@ -57,3 +60,4 @@ require ("prototypes.technologies.gold_technology")
 --entities
 require ("prototypes.entities.mill")
 require ("prototypes.entities.goldStatue")
+require ("prototypes.entities.better_solar_panel")
