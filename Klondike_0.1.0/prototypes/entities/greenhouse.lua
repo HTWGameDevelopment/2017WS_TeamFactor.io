@@ -45,11 +45,13 @@ data:extend(
     crafting_speed = 1,
     energy_source =
     {
-      type = "burner",
-      fuel_category = "biological",
-      effectivity = 1,
-      emissions = 0.001,
-      fuel_inventory_size = 1,
+      {
+        type = "burner",
+        fuel_category = "biological",
+        effectivity = 1,
+        emissions = 0.001,
+        fuel_inventory_size = 1,
+      }
     },
     energy_usage = "400kW",
     ingredient_count = 5,
