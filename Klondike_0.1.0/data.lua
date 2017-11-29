@@ -26,6 +26,7 @@ require ("prototypes.items.garden_item")
 require ("prototypes.items.mill_item")
 require ("prototypes.items.fertilizer_item")
 require ("prototypes.items.liquitfertilizer_item")
+require ("prototypes.items.gold_statue_item")
 
 --fluids
 require ("prototypes.fluids.soysouce_fluid")
@@ -48,9 +49,11 @@ require ("prototypes.recipes.nature_science_pack_recipe")
 require ("prototypes.recipes.mill_recipe")
 require ("prototypes.recipes.fertilizer_recipe")
 require ("prototypes.recipes.liquitfertilizer_recipe")
+require ("prototypes.recipes.gold_statue_recipe")
 
 --technologies
 require ("prototypes.technologies.gold_technology")
 
 --entities
 require ("prototypes.entities.mill")
+require ("prototypes.entities.goldStatue")
