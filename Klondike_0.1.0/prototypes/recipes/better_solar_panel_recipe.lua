@@ -1,14 +1,16 @@
 data:extend({
 	{
 		type = "recipe",
-		name = "bettersolar-panel-recipe",
-		category = "smelting",
+		name = "better-solar-panel-recipe",
+		category = "advanced-crafting",
 		enabled = true,
 		energy_required = 10,
 		ingredients =
 		{
-			{"sand-item", 2},
+			{"solar-panel", 1},
+			{"glas-item", 5},
+			{"fast-processing-unit-item", 1},
 		},		
-		result = "glas-item"    	
+		result = "better-solar-panel"    	
 	}
 })
