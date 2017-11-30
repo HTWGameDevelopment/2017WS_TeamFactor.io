@@ -11,5 +11,18 @@ data:extend({
 		},
 		result_count = 1,	
 		result = "goldbar-item"   	
+	},
+	{
+		type = "recipe",
+		name = "goldbar-recipe",
+		category = "smelting",
+		enabled = false,
+		energy_required = 20,
+		ingredients =
+		{
+			{"goldwire-item", 10},
+		},
+		result_count = 1,	
+		result = "goldbar-item"   	
 	}
 })
