@@ -1,7 +1,7 @@
 data:extend({
 	{
 		type = "recipe",
-		name = "goldbar-recipe",
+		name = "goldbar-A-recipe",
 		category = "smelting",
 		enabled = false,
 		energy_required = 20,
@@ -14,7 +14,7 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "goldbar-recipe",
+		name = "goldbar-B-recipe",
 		category = "smelting",
 		enabled = false,
 		energy_required = 20,
