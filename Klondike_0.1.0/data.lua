@@ -37,7 +37,6 @@ require ("prototypes.items.gold.better_solar_panel_item")
 require ("prototypes.fluids.soysouce_fluid")
 require ("prototypes.fluids.chlorine_fluid")
 
-
 --recipes
 require ("prototypes.recipes.food.salt_recipe")
 require ("prototypes.recipes.gold.gold_recipe")
