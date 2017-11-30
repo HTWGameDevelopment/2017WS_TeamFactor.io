@@ -59,8 +59,8 @@ data:extend(
           filename = "__Klondike__/graphics/entities/greenhouse.png",
           width = 225,
           height = 225,
-          frame_count = 18,
-          line_length = 6,
+          frame_count = 1,
+          line_length = 1,
 	        animation_speed = 1 / 3,
           shift = {0.5, 0}    
 	     },

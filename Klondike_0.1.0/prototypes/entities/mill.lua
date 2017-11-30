@@ -33,8 +33,8 @@ data:extend(
           filename = "__Klondike__/graphics/entities/mill.png",
           width = 256,
           height = 256,
-          frame_count = 25,
-          line_length = 5,
+          frame_count = 1,
+          line_length = 1,
           animation_speed = 0.1,
           shift = {0, 0}
         },
