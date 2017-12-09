@@ -32,6 +32,7 @@ require ("prototypes.items.greenhouse.liquitfertilizer_item")
 require ("prototypes.items.gold.gold_statue_item")
 require ("prototypes.items.gold.fast_processing_unit_item")
 require ("prototypes.items.gold.better_solar_panel_item")
+require ("prototypes.items.food.klondike_raw_fish")
 
 --fluids
 require ("prototypes.fluids.soysouce_fluid")
@@ -66,3 +67,4 @@ require ("prototypes.entities.mill")
 require ("prototypes.entities.goldStatue")
 require ("prototypes.entities.better_solar_panel")
 require ("prototypes.entities.greenhouse")
+require ("prototypes.entities.klondike_eating_raw_fish_entity")
