@@ -44,7 +44,6 @@ function player_property_update(mode, index, name, v)
 	end
 end
 
---verstehe ich nicht
 function player_damage(index, v)
 	if game.players[index].character.health > v then
 		game.players[index].character.health = game.players[index].character.health - v
@@ -111,7 +110,7 @@ end)
 
 script.on_event(defines.events.on_player_respawned, function(event)
 	local player = game.players[event.player_index]
-	local player_data = global.osm.player[event.player_index]
+	local player_data = global.klondike.player[event.player_index]
 	if HUNGER_IMPLEMENT then
 		player.insert{ name = "klondike-raw-fish", count = DEFAULT_ACQUIRE_RAW_FISH }
 	end
@@ -131,7 +130,6 @@ script.on_event(defines.events.on_trigger_created_entity, function(event)
 	local thismod_flag = false
 	if event.entity.name == "klondike-eating-raw-fish-entity" then
 		player_property_update("increase", event.entity.last_user.index, "hunger_value", ADD_HUNGER_EATING_FISH)
-		--event.entity.last_user.character.health = event.entity.last_user.character.health + ADD_HEALTH_EATING_FISH
 		thismod_flag = true
 	end
 	if thismod_flag then
@@ -144,7 +142,7 @@ script.on_event(defines.events.on_player_crafted_item, function(event)
 	local player = game.players[event.player_index]
 	player_property_update("decrease", event.player_index, "hunger_value", HUNGER_DECREASE_DEPEND_CRAFT)
 	hunger_gui_check(event.player_index)
-	if global.osm.player[event.player_index].hunger_value == 0 and player.character ~= nil then
+	if global.klondike.player[event.player_index].hunger_value == 0 and player.character ~= nil then
 		player_damage(event.player_index, HEALTH_DECREASE_DEPEND_CRAFT)
 	end
 end)
@@ -153,7 +151,7 @@ script.on_event(defines.events.on_player_mined_tile, function(event)
 	local player = game.players[event.player_index]
 	player_property_update("decrease", event.player_index, "hunger_value", HUNGER_DECREASE_DEPEND_TILE)
 	hunger_gui_check(event.player_index)
-	if global.osm.player[event.player_index].hunger_value == 0 and player.character ~= nil then
+	if global.klondike.player[event.player_index].hunger_value == 0 and player.character ~= nil then
 		player_damage(event.player_index, HEALTH_DECREASE_DEPEND_TILE)
 	end
 end)
@@ -162,7 +160,7 @@ script.on_event(defines.events.on_player_built_tile, function(event)
 	local player = game.players[event.player_index]
 	player_property_update("decrease", event.player_index, "hunger_value", HUNGER_DECREASE_DEPEND_TILE)
 	hunger_gui_check(event.player_index)
-	if global.osm.player[event.player_index].hunger_value == 0 and player.character ~= nil then
+	if global.klondike.player[event.player_index].hunger_value == 0 and player.character ~= nil then
 		player_damage(event.player_index, HEALTH_DECREASE_DEPEND_TILE)
 	end
 end)
@@ -171,7 +169,7 @@ script.on_event(defines.events.on_player_mined_item, function(event)
 	local player = game.players[event.player_index]
 	player_property_update("decrease", event.player_index, "hunger_value", HUNGER_DECREASE_DEPEND_ITEM)
 	hunger_gui_check(event.player_index)
-	if global.osm.player[event.player_index].hunger_value == 0 and player.character ~= nil then
+	if global.klondike.player[event.player_index].hunger_value == 0 and player.character ~= nil then
 		player_damage(event.player_index, HEALTH_DECREASE_DEPEND_ITEM)
 	end
 end)
@@ -180,7 +178,7 @@ script.on_event(defines.events.on_built_entity, function(event)
 	local player = game.players[event.player_index]
 	player_property_update("decrease", event.player_index, "hunger_value", HUNGER_DECREASE_DEPEND_BUILD)
 	hunger_gui_check(event.player_index)
-	if global.osm.player[event.player_index].hunger_value == 0 and player.character ~= nil then
+	if global.klondike.player[event.player_index].hunger_value == 0 and player.character ~= nil then
 		player_damage(event.player_index, HEALTH_DECREASE_DEPEND_BUILD)
 	end
 end)
@@ -196,14 +194,14 @@ script.on_event(defines.events.on_tick, function(event)
 			if player.connected then
 				create_player_data(index)
 				player_property_update("increase", index, "ticks", 1)
-				if global.osm.player[index].ticks % HUNGER_PERIODIC_TICK == 0 then
-					if global.osm.player[index].hunger_value > 0 then
+				if global.klondike.player[index].ticks % HUNGER_PERIODIC_TICK == 0 then
+					if global.klondike.player[index].hunger_value > 0 then
 						player_property_update("decrease", index, "hunger_value", HUNGER_DECREASE)
 						hunger_gui_check(index)
 					end
 				end
-				if global.osm.player[index].ticks % HEALTH_PERIODIC_TICK == 0 then
-					if global.osm.player[index].hunger_value == 0 and player.character ~= nil then
+				if global.klondike.player[index].ticks % HEALTH_PERIODIC_TICK == 0 then
+					if global.klondike.player[index].hunger_value == 0 and player.character ~= nil then
 						if DIFFICULTY_VALUE == 0 then
 							if player.character.health > HEALTH_DECREASE then
 								player_damage(index, HEALTH_DECREASE)

@@ -68,3 +68,7 @@ require ("prototypes.entities.goldStatue")
 require ("prototypes.entities.better_solar_panel")
 require ("prototypes.entities.greenhouse")
 require ("prototypes.entities.klondike_eating_raw_fish_entity")
+
+local raw_fish_entity = data.raw["fish"]["fish"]
+raw_fish_entity.minable.result = "klondike-raw-fish"
+raw_fish_entity.minable.count = 20

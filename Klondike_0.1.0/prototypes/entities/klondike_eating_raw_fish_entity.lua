@@ -3,8 +3,7 @@ data:extend(
   {
     type = "simple-entity",
     name = "klondike-eating-raw-fish-entity",
-    render_layer = "object",
-    icon = "__Klondike__/graphics/icons/gold.png",
+    icon = "__Klondike__/graphics/icons/rice.png",
     flags = {"placeable-neutral"},
     minable = {mining_time = 1, result = "raw-fish"},
     max_health = 50,
@@ -18,5 +17,6 @@ data:extend(
       height = 1,
       shift = {0, 0}
     },
+    order = "a[eatingrawfish]"
   }
 })
