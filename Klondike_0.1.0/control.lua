@@ -1,3 +1,4 @@
+--TODO: In Logic Ordner
 require("config")
 
 function initialize()
@@ -12,7 +13,7 @@ end
 function create_player_data(index)
 	if global.klondike.player[index] == nil then
 		player_property_update("fix", index, "hunger_value", 100)
-		player_property_update("fix", index, "ticks", 0) --verstehe ich nicht | glaub ech bedeutet, die tickrate anfangs auf 0 setzen?
+		player_property_update("fix", index, "ticks", 0) --tickrate
 	end
 end
 
@@ -88,8 +89,8 @@ function hunger_gui_check(player_index)
 	end
 end
 
---Events (Essen)
 
+--Events (Essen) TODO: EVENT ORDNER!
 
 script.on_init(function()
 	initialize()
@@ -128,13 +129,13 @@ end)
 --Event wenn der Spieler isst, nur Hunger wird aufgefuellt, nicht seine Lebenspunkte!
 script.on_event(defines.events.on_trigger_created_entity, function(event)
 	local thismod_flag = false
+	--謎の生魚
 	if event.entity.name == "klondike-eating-raw-fish-entity" then
-		player_property_update("increase", event.player_index.index, "hunger_value", ADD_HUNGER_EATING_FISH)
-		--event.entity.last_user.character.health = event.entity.last_user.character.health + ADD_HEALTH_EATING_FISH
+		player_property_update("increase", event.entity.last_user.index, "hunger_value", ADD_HUNGER_EATING_FISH)
 		thismod_flag = true
 	end
 	if thismod_flag then
-		hunger_gui_check(event.player_index.index)
+		hunger_gui_check(event.entity.last_user.index)
 		event.entity.destroy()
 	end
 end)
@@ -189,6 +190,7 @@ script.on_event(defines.events.on_player_mined_entity, function(event)
 	hunger_gui_check(event.player_index)
 end)
 
+--TODO: TESTEN!
 script.on_event(defines.events.on_tick, function(event)
 	if HUNGER_IMPLEMENT then
 		for index, player in pairs(game.players) do

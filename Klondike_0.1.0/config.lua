@@ -1,4 +1,4 @@
-
+--KONSTANTEN fuer Hunger und Lebenspunkte TODO: In Logic
 HUNGER_IMPLEMENT = true
 DIFFICULTY_VALUE = 0
 

@@ -1,8 +1,9 @@
 data:extend(
 {
   {
-    type = "simple-entity",
+    type = "simple-entity-with-force",
     name = "klondike-eating-raw-fish-entity",
+    render_layer = "object",
     icon = "__Klondike__/graphics/icons/rice.png",
     flags = {"placeable-neutral"},
     minable = {mining_time = 1, result = "raw-fish"},
