@@ -129,11 +129,12 @@ end)
 script.on_event(defines.events.on_trigger_created_entity, function(event)
 	local thismod_flag = false
 	if event.entity.name == "klondike-eating-raw-fish-entity" then
-		player_property_update("increase", event.entity.last_user.index, "hunger_value", ADD_HUNGER_EATING_FISH)
+		player_property_update("increase", event.player_index.index, "hunger_value", ADD_HUNGER_EATING_FISH)
+		--event.entity.last_user.character.health = event.entity.last_user.character.health + ADD_HEALTH_EATING_FISH
 		thismod_flag = true
 	end
 	if thismod_flag then
-		hunger_gui_check(event.entity.last_user.index)
+		hunger_gui_check(event.player_index.index)
 		event.entity.destroy()
 	end
 end)
