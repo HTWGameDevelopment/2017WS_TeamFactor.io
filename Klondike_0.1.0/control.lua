@@ -68,6 +68,14 @@ function player_damage(index, v)
 	end
 end
 
+function player_fatigue(index, v)
+	if v < 25 then
+		game.players[index].character_running_speed_modifier = -0.75
+	else
+		game.players[index].character_running_speed_modifier = 0
+	end
+end
+
 script.on_init(function()
 	initialize()
 end)

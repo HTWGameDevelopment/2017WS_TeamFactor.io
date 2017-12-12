@@ -11,6 +11,7 @@ script.on_event(defines.events.on_tick, function(event)
 						player_property_update("decrease", index, "hunger_value", HUNGER_DECREASE)
 						hunger_gui_check(index)
 					end
+				player_fatigue(index, global.klondike.player[index].hunger_value)
 				end
 				if global.klondike.player[index].ticks % HEALTH_PERIODIC_TICK == 0 then
 					if global.klondike.player[index].hunger_value == 0 and player.character ~= nil then
