@@ -3,6 +3,7 @@ require ("logic.color_function")
 require ("logic.gardenlimitation_function")
 require ("logic.pipecoverspictures_function")
 require ("logic.greenhousepipepictures_function")
+require("logic.hungerspeed_sigmoid_function")
 
 --categories
 require ("prototypes.categories.food_category")
@@ -32,6 +33,7 @@ require ("prototypes.items.greenhouse.liquitfertilizer_item")
 require ("prototypes.items.gold.gold_statue_item")
 require ("prototypes.items.gold.fast_processing_unit_item")
 require ("prototypes.items.gold.better_solar_panel_item")
+require ("prototypes.items.food.klondike_raw_fish")
 
 --fluids
 require ("prototypes.fluids.soysouce_fluid")
@@ -70,6 +72,14 @@ require ("prototypes.entities.mill")
 require ("prototypes.entities.goldStatue")
 require ("prototypes.entities.better_solar_panel")
 require ("prototypes.entities.greenhouse")
+require ("prototypes.entities.klondike_eating_raw_fish_entity")
+
+--gui
+require("graphics.gui.hunger_frame")
+
+local raw_fish_entity = data.raw["fish"]["fish"]
+raw_fish_entity.minable.result = "klondike-raw-fish"
+raw_fish_entity.minable.count = 20
 
 --achievments
 require ("achievments.gold_achievment")
