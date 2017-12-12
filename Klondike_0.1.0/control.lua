@@ -18,6 +18,7 @@ require("events.hunger.on_player_built_tile")
 require("events.hunger.on_built_entity")
 require("events.hunger.on_trigger_created_entity")
 require("events.hunger.on_tick")
+require("events.food.getMeatEvent")
 
 function initialize()
 	if global.klondike == nil then
