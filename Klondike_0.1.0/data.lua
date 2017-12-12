@@ -3,6 +3,7 @@ require ("logic.color_function")
 require ("logic.gardenlimitation_function")
 require ("logic.pipecoverspictures_function")
 require ("logic.greenhousepipepictures_function")
+require("logic.hungerspeed_sigmoid_function")
 
 --categories
 require ("prototypes.categories.food_category")

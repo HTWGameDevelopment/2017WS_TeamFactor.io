@@ -3,6 +3,9 @@ require("hunger_constants")
 --gui
 require("graphics.gui.hunger_frame")
 
+--logic
+require("logic.hungerspeed_sigmoid_function")
+
 --events
 require("events.hunger.on_player_created")
 require("events.hunger.on_player_respawned")
