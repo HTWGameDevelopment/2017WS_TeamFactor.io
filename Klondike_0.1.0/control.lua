@@ -1,4 +1,4 @@
-require("config")
+require("hunger_constants")
 
 --gui
 require("graphics.gui.hunger_frame")
@@ -14,6 +14,7 @@ require("events.hunger.on_player_crafted_item")
 require("events.hunger.on_player_built_tile")
 require("events.hunger.on_built_entity")
 require("events.hunger.on_trigger_created_entity")
+require("events.hunger.on_tick")
 
 function initialize()
 	if global.klondike == nil then
@@ -73,33 +74,4 @@ end)
 
 script.on_load(function()
 	initialize()
-end)
-
---TODO: TESTEN!
-script.on_event(defines.events.on_tick, function(event)
-	if HUNGER_IMPLEMENT then
-		for index, player in pairs(game.players) do
-			if player.connected then
-				create_player_data(index)
-				player_property_update("increase", index, "ticks", 1)
-				if global.klondike.player[index].ticks % HUNGER_PERIODIC_TICK == 0 then
-					if global.klondike.player[index].hunger_value > 0 then
-						player_property_update("decrease", index, "hunger_value", HUNGER_DECREASE)
-						hunger_gui_check(index)
-					end
-				end
-				if global.klondike.player[index].ticks % HEALTH_PERIODIC_TICK == 0 then
-					if global.klondike.player[index].hunger_value == 0 and player.character ~= nil then
-						if DIFFICULTY_VALUE == 0 then
-							if player.character.health > HEALTH_DECREASE then
-								player_damage(index, HEALTH_DECREASE)
-							end
-						else
-							player_damage(index, HEALTH_DECREASE)
-						end
-					end
-				end
-			end
-		end
-	end
 end)
