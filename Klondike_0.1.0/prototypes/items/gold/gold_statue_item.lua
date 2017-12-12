@@ -7,6 +7,6 @@ data:extend({
 		order = "d[goldStatue]",
 		subgroup = "production-machine",
 		place_result = "goldStatue",		
-		stack_size = 10
+		stack_size = 1
 	}
 })

@@ -12,7 +12,11 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-        		recipe = "goldbar-recipe"
+        		recipe = "goldbar-A-recipe"
+			},
+			{
+				type = "unlock-recipe",
+        		recipe = "goldbar-B-recipe"
 			},
 			{
 				type = "unlock-recipe",
