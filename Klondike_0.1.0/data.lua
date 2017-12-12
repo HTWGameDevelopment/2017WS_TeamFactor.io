@@ -4,6 +4,7 @@ require ("logic.gardenlimitation_function")
 require ("logic.pipecoverspictures_function")
 require ("logic.greenhousepipepictures_function")
 require("logic.hungerspeed_sigmoid_function")
+require("events.food.AddLootToEntity_function")
 
 --categories
 require ("prototypes.categories.food_category")
@@ -34,6 +35,9 @@ require ("prototypes.items.gold.gold_statue_item")
 require ("prototypes.items.gold.fast_processing_unit_item")
 require ("prototypes.items.gold.better_solar_panel_item")
 require ("prototypes.items.food.klondike_raw_fish")
+require ("prototypes.items.food.mushroom_item")
+require ("prototypes.items.food.seeds_item")
+require ("prototypes.items.food.raw_meat_item")
 
 --fluids
 require ("prototypes.fluids.soysouce_fluid")
