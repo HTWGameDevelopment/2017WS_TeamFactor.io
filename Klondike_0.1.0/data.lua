@@ -67,6 +67,9 @@ require ("prototypes.recipes.gold.better_solar_panel_recipe")
 require ("prototypes.recipes.gold.chlorine_recipe")
 require ("prototypes.recipes.gold.new_capsule_recipe")
 require ("prototypes.recipes.gold.fast_processing_unit_recipe")
+require ("prototypes.recipes.gold.new_beton_recipe")
+require ("prototypes.recipes.gold.new_lab_recipe")
+require ("prototypes.recipes.gold.new_advanced_circuit_recipe")
 
 --technologies
 require ("prototypes.technologies.gold_technology")
