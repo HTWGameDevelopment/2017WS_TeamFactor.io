@@ -80,6 +80,7 @@ require ("prototypes.entities.greenhouse")
 --capsules (eating entities)
 require ("prototypes.entities.klondike_eating_raw_fish_entity")
 require ("prototypes.entities.eating_raw_meat_entity")
+require ("prototypes.entities.eating_mushroom_entity")
 
 --gui
 require("graphics.gui.hunger_frame")
