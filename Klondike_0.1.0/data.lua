@@ -38,6 +38,8 @@ require ("prototypes.items.food.klondike_raw_fish")
 require ("prototypes.items.food.mushroom_item")
 require ("prototypes.items.food.seeds_item")
 require ("prototypes.items.food.raw_meat_item")
+require ("prototypes.items.food.fKitchen_item")
+require ("prototypes.items.food.eKitchen_item")
 
 --fluids
 require ("prototypes.fluids.soysouce_fluid")
@@ -66,6 +68,8 @@ require ("prototypes.recipes.gold.gold_statue_recipe")
 require ("prototypes.recipes.gold.better_solar_panel_recipe")
 require ("prototypes.recipes.gold.chlorine_recipe")
 require ("prototypes.recipes.gold.new_capsule_recipe")
+require ("prototypes.recipes.food.fKitchen_recipe")
+require ("prototypes.recipes.food.eKitchen_recipe")
 require ("prototypes.recipes.gold.fast_processing_unit_recipe")
 
 --technologies
@@ -76,6 +80,8 @@ require ("prototypes.entities.mill")
 require ("prototypes.entities.goldStatue")
 require ("prototypes.entities.better_solar_panel")
 require ("prototypes.entities.greenhouse")
+require ("prototypes.entities.fKitchen")
+require ("prototypes.entities.eKitchen")
 require ("prototypes.entities.klondike_eating_raw_fish_entity")
 
 --gui
