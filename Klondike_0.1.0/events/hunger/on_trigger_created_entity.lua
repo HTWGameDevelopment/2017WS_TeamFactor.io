@@ -15,6 +15,10 @@ script.on_event(defines.events.on_trigger_created_entity, function(event)
 		player_property_update("increase", event.entity.last_user.index, "hunger_value", ADD_HUNGER_EATING_MUSHROOM)
 		thismod_flag = true
 	end
+	if event.entity.name == "eating-cooked-meat-entity" then
+		player_property_update("increase", event.entity.last_user.index, "hunger_value", ADD_HUNGER_EATING_COOKED_MEAT)
+		thismod_flag = true
+	end
 	if thismod_flag then
 		hunger_gui_check(event.entity.last_user.index)
 		event.entity.destroy()
