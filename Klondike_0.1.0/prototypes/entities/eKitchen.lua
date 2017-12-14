@@ -10,8 +10,8 @@ data:extend(
     max_health = 300,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",    
-    collision_box = {{-1.6, -1.4}, {2.6, 2.3}},
-    selection_box = {{-1.8, -1.6}, {2.8, 2.5}},
+    collision_box = {{-0.5, -0.4}, {1.6, 1.1}},
+    selection_box = {{-0.7, -0.7}, {1.6, 0.9}},
     module_specification =
     {
       module_slots = 1
@@ -31,8 +31,8 @@ data:extend(
       layers={
         {
           filename = "__Klondike__/graphics/entities/eKitchen.png",
-          width = 150,
-          height = 150,
+          width = 80,
+          height = 80,
           frame_count = 1,
           line_length = 1,
 	        animation_speed = 1 / 3,
