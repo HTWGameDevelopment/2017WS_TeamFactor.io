@@ -68,8 +68,11 @@ require ("prototypes.recipes.gold.chlorine_recipe")
 require ("prototypes.recipes.gold.new_capsule_recipe")
 require ("prototypes.recipes.gold.fast_processing_unit_recipe")
 require ("prototypes.recipes.gold.new_beton_recipe")
-require ("prototypes.recipes.gold.new_lab_recipe")
 require ("prototypes.recipes.gold.new_advanced_circuit_recipe")
+require ("prototypes.recipes.gold.new_big_electric_pole_recipe")
+require ("prototypes.recipes.gold.new_nuclear_reactor_recipe")
+require ("prototypes.recipes.gold.new_centrifuge_recipe")
+require ("prototypes.recipes.gold.new_tank_recipe")
 
 --technologies
 require ("prototypes.technologies.gold_technology")
