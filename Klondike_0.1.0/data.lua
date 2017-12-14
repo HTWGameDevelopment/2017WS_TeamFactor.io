@@ -38,6 +38,7 @@ require ("prototypes.items.food.klondike_raw_fish")
 require ("prototypes.items.food.mushroom_item")
 require ("prototypes.items.food.seeds_item")
 require ("prototypes.items.food.raw_meat_item")
+require ("prototypes.items.food.cooked_meat_item")
 require ("prototypes.items.food.fKitchen_item")
 require ("prototypes.items.food.eKitchen_item")
 
@@ -71,6 +72,7 @@ require ("prototypes.recipes.gold.new_capsule_recipe")
 require ("prototypes.recipes.food.fKitchen_recipe")
 require ("prototypes.recipes.food.eKitchen_recipe")
 require ("prototypes.recipes.gold.fast_processing_unit_recipe")
+require ("prototypes.recipes.food.cooked_meat_recipe")
 
 --technologies
 require ("prototypes.technologies.gold_technology")
@@ -82,7 +84,13 @@ require ("prototypes.entities.better_solar_panel")
 require ("prototypes.entities.greenhouse")
 require ("prototypes.entities.fKitchen")
 require ("prototypes.entities.eKitchen")
+
+--capsules (eating entities)
+
 require ("prototypes.entities.klondike_eating_raw_fish_entity")
+require ("prototypes.entities.eating_raw_meat_entity")
+require ("prototypes.entities.eating_mushroom_entity")
+require ("prototypes.entities.eating_cooked_meat_entity")
 
 --gui
 require("graphics.gui.hunger_frame")

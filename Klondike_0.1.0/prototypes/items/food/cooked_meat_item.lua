@@ -2,8 +2,8 @@ data:extend(
 {
   {
       type = "capsule",
-      name = "mushroom-item",
-      icon = "__Klondike__/graphics/icons/mushroom.png",
+      name = "cooked-meat-item",
+      icon = "__Klondike__/graphics/icons/cooked_meat.png",
       flags = {"goes-to-main-inventory"},
       subgroup = "ingredience",
       capsule_action =
@@ -28,7 +28,7 @@ data:extend(
                 target_effects =
                 {
                   type = "create-entity",
-                  entity_name = "eating-mushroom-entity",
+                  entity_name = "eating-cooked-meat-entity",
                   trigger_created_entity = true
                 }
               }
@@ -36,7 +36,7 @@ data:extend(
           }
         }
       },
-      order = "g[mushroom]",
+      order = "g[cooked-meat]",
       stack_size = 50
   }
 })
