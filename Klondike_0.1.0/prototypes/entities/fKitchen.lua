@@ -12,13 +12,10 @@ data:extend(
     dying_explosion = "medium-explosion",    
     collision_box = {{-0.5, -0.4}, {1.6, 1.1}},
     selection_box = {{-0.7, -0.7}, {1.6, 0.9}},
-    module_specification =
-    {
-      module_slots = 1
-    },
+    
     allowed_effects = {"speed", "productivity", "pollution"},
     crafting_categories = {"food"},
-    crafting_speed = 1,
+    crafting_speed = 1.5,
     energy_source =
     {      
         type = "burner",
