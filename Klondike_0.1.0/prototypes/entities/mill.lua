@@ -10,8 +10,8 @@ data:extend(
     max_health = 300,
 	  corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    collision_box = {{-2.5, -2.4}, {2.5, 2.4}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    collision_box = {{-1.0, -0.8}, {0.0, 1.0}},
+    selection_box = {{-1.1, -1.0}, {0.0, 1.3}},
     module_specification =
     {
       module_slots = 2
@@ -31,11 +31,11 @@ data:extend(
       layers = {
         {
           filename = "__Klondike__/graphics/entities/mill.png",
-          width = 256,
-          height = 256,
-          frame_count = 1,
-          line_length = 1,
-          animation_speed = 0.1,
+          width = 80,
+          height = 63,
+          frame_count = 4,
+          line_length = 2,
+          animation_speed = 0.2,
           shift = {0, 0}
         },
       }
