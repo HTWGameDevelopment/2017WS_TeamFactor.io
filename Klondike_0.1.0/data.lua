@@ -86,11 +86,10 @@ require ("prototypes.entities.fKitchen")
 require ("prototypes.entities.eKitchen")
 
 --capsules (eating entities)
-
-require ("prototypes.entities.klondike_eating_raw_fish_entity")
-require ("prototypes.entities.eating_raw_meat_entity")
-require ("prototypes.entities.eating_mushroom_entity")
-require ("prototypes.entities.eating_cooked_meat_entity")
+require ("prototypes.entities.food.klondike_eating_raw_fish_entity")
+require ("prototypes.entities.food.eating_raw_meat_entity")
+require ("prototypes.entities.food.eating_mushroom_entity")
+require ("prototypes.entities.food.eating_cooked_meat_entity")
 
 --gui
 require("graphics.gui.hunger_frame")
