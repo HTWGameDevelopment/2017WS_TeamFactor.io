@@ -2,7 +2,7 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "chlorine",
+    name = "chlorine-recipe",
     category = "chemistry",
     enabled = true,
     energy_required = 10,

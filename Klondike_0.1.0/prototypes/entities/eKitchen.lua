@@ -18,7 +18,7 @@ data:extend(
     },
     allowed_effects = {"speed", "productivity", "pollution"},
     crafting_categories = {"food"},
-    crafting_speed = 1,
+    crafting_speed = 1.3,
     energy_source =
     {
       type = "electric",

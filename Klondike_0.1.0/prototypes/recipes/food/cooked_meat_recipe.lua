@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "cooked-meat-recipe",
-		category = "smelting",
+		category = "food",
 		enabled = true,
 		energy_required = 20,
 		ingredients =

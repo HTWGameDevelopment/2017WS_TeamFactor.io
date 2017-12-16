@@ -2,7 +2,7 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "soysouce",
+    name = "soysouce-recipe",
     category = "chemistry",
     enabled = true,
     energy_required = 20,

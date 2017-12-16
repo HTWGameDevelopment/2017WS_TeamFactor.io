@@ -2,7 +2,7 @@
 
 script.on_event(defines.events.on_trigger_created_entity, function(event)
 	local thismod_flag = false
-	--謎の生魚
+	
 	if event.entity.name == "klondike-eating-raw-fish-entity" then
 		player_property_update("increase", event.entity.last_user.index, "hunger_value", ADD_HUNGER_EATING_FISH)
 		event.entity.last_user.character.health = event.entity.last_user.character.health + ADD_HEALTH_EATING_FISH

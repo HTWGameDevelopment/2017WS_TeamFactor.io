@@ -15,7 +15,7 @@ data:extend(
     
     allowed_effects = {"speed", "productivity", "pollution"},
     crafting_categories = {"food"},
-    crafting_speed = 1.5,
+    crafting_speed = 1,
     energy_source =
     {      
         type = "burner",
