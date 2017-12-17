@@ -39,5 +39,10 @@ data:extend(
 	     },
 	   }
     },
+    working_sound =
+    {
+      sound = {filename = "__Klondike__/sound/kitchensound.ogg"},
+      apparent_volume = 2.5,
+    },
   }
 })
