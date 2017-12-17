@@ -17,8 +17,9 @@ require("events.hunger.on_player_crafted_item")
 require("events.hunger.on_player_built_tile")
 require("events.hunger.on_built_entity")
 require("events.hunger.on_trigger_created_entity")
---require("events.hunger.on_tick")
+require("events.hunger.on_tick")
 require("events.food.getMeatEvent")
+require("events.hunger.on_robot_mined_entity")
 
 function initialize()
 	if global.klondike == nil then
@@ -31,6 +32,7 @@ end
 
 function create_player_data(index)
 	if global.klondike.player[index] == nil then
+		HUNGER_PERIODIC_TICK = SCHEITELPUNKT/2 + SCHIEBER
 		player_property_update("fix", index, "hunger_value", 100)
 		player_property_update("fix", index, "ticks", 0) --tickrate
 	end

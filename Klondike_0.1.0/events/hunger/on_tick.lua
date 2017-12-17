@@ -6,16 +6,16 @@ script.on_event(defines.events.on_tick, function(event)
 			if player.connected then
 				create_player_data(index)
 				player_property_update("increase", index, "ticks", 1)
-				if global.klondike.player[index].ticks % 10 == 0 then
-					--if global.klondike.player[index].ticks % HUNGER_PERIODIC_TICK == 0 then
+				--if global.klondike.player[index].ticks % 200 == 0 then
+				if global.klondike.player[index].ticks % HUNGER_PERIODIC_TICK == 0 then
 					if global.klondike.player[index].hunger_value > 0 then
 						player_property_update("decrease", index, "hunger_value", HUNGER_DECREASE)
 						hunger_gui_check(index)
 						
 						HUNGER_PERIODIC_TICK = hungerspeed_sigmoid(100 - global.klondike.player[index].hunger_value)
-					end
-				player_fatigue(index, global.klondike.player[index].hunger_value)
+					end				
 				end
+				player_fatigue(index, global.klondike.player[index].hunger_value)
 
 			--[[Healthpoints loss when hungry
 				if global.klondike.player[index].ticks % HEALTH_PERIODIC_TICK == 0 then

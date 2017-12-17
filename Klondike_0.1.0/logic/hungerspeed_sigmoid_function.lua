@@ -1,7 +1,7 @@
 --Function on how fast the player hungers.
 
 STAERKE = 200
-SCHEITELPUNKT = 1700
+SCHEITELPUNKT = 1500
 SCHIEBER = 400
 
 function hungerspeed_sigmoid(num)
