@@ -98,6 +98,9 @@ require ("prototypes.recipes.food.ham_recipe")
 require ("prototypes.recipes.food.schnitzel_recipe")
 require ("prototypes.recipes.food.soup_recipe")
 require ("prototypes.recipes.food.tofu_recipe")
+require ("prototypes.recipes.gold.new_concrete_recipe")
+require ("prototypes.recipes.gold.new_satellite_recipe")
+require ("prototypes.recipes.gold.new_module_recipe")
 
 --technologies
 require ("prototypes.technologies.gold_technology")
