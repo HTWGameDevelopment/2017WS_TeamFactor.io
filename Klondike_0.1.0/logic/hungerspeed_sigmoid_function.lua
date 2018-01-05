@@ -2,7 +2,7 @@
 
 STAERKE = 200
 SCHEITELPUNKT = 1800
-SCHIEBER = 400
+SCHIEBER = 500
 
 function hungerspeed_sigmoid(num)
   local y = SCHEITELPUNKT/(1+STAERKE^((num/100)^2))+SCHIEBER
