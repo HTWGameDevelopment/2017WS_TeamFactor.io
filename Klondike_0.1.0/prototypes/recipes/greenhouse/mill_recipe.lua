@@ -7,7 +7,7 @@ data:extend({
 		ingredients =
 		{
 			{"iron-gear-wheel", 20},
-			{"steel-plate", 10},
+			{"iron-plate", 10},
 			{"stone-brick", 15},
 			{"electronic-circuit", 20},
 		},		
