@@ -6,7 +6,7 @@ script.on_event(defines.events.on_player_respawned, function(event)
 	if HUNGER_IMPLEMENT then
 		player.insert{ name = "raw-meat-item", count = DEFAULT_ACQUIRE_RAW_FISH }
 	end
-	if player_data ~= nil then
+	if player_data ~= nil and HUNGER_IMPLEMENT then
 		player_property_update("fix", event.player_index, "hunger_value", 100)
 		hunger_gui_check(event.player_index)
 	end

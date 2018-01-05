@@ -83,9 +83,19 @@ function player_fatigue(index, v)
 end
 
 script.on_init(function()
-	initialize()
+	if settings.startup["hunger-enabled"].value == true then
+		HUNGER_IMPLEMENT = true
+        initialize()
+    else
+    	HUNGER_IMPLEMENT = false
+    end	
 end)
 
 script.on_load(function()
-	initialize()
+	if settings.startup["hunger-enabled"].value == true then
+		HUNGER_IMPLEMENT = true
+        initialize()
+    else
+    	HUNGER_IMPLEMENT = false
+    end	
 end)
