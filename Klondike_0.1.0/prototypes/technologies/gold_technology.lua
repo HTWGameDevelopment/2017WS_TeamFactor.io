@@ -22,6 +22,10 @@ data:extend({
 				type = "unlock-recipe",
         		recipe = "goldwire-recipe"
 			},
+			{
+				type = "unlock-recipe",
+        		recipe = "gold-statue-recipe"
+			},
 		},
 		prerequisites = {"automation-2","mining-productivity-8"},
 		unit =

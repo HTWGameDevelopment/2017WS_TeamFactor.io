@@ -22,7 +22,9 @@ end
 
 AddLootToEntity("unit-spawner","biter-spawner","mushroom-item",0.5,1,3)
 AddLootToEntity("unit-spawner","spitter-spawner","seeds-item",0.8,1,5)
-AddLootToEntity("tree","tree-01","apple-item",0.4,1,2)
-AddLootToEntity("tree","tree-03","apple-item",0.5,1,2)
-AddLootToEntity("tree","tree-04","apple-item",0.4,1,2)
-AddLootToEntity("tree","tree-05","apple-item",0.5,1,2)
+AddLootToEntity("tree","tree-01","apple-item",0.6,1,2)
+AddLootToEntity("tree","tree-03","apple-item",0.7,1,2)
+AddLootToEntity("tree","tree-04","apple-item",0.6,1,2)
+AddLootToEntity("tree","tree-05","apple-item",0.7,1,2)
+AddLootToEntity("tree","tree-02","apple-item",0.6,1,2)
+AddLootToEntity("tree","tree-06","apple-item",0.7,1,2)
