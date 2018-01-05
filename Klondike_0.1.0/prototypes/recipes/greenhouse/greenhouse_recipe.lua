@@ -7,7 +7,7 @@ data:extend({
 		energy_required = 15,
 		ingredients =
 		{
-			{"steel-plate", 10},
+			{"iron-plate", 20},
 			{"glas-item", 15},
 			{"humus-item", 5},
 		},		
