@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "greenhouse-recipe",
 		category = "advanced-crafting",
-		enabled = true,
+		enabled = false,
 		energy_required = 15,
 		ingredients =
 		{

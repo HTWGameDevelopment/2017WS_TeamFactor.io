@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "mushroom-recipe",
 		category = "greenhouse",
-		enabled = true,
+		enabled = false,
 		energy_required = 15,
 		ingredients =
 		{

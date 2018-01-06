@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "ricepan-recipe",
 		category = "food",
-		enabled = true,
+		enabled = false,
 		energy_required = 25,
 		ingredients =
 		{

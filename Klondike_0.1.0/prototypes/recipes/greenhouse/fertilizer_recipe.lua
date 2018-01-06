@@ -3,11 +3,11 @@ data:extend({
 		type = "recipe",
 		name = "fertilizer-recipe",
 		category = "chemistry",
-		enabled = true,
+		enabled = false,
 		energy_required = 10,
 		ingredients =
 		{
-			{"humus-item", 30},
+			{"humus-item", 20},
 			{"sulfur", 15},
 			{"salt-item", 5},
 		},		

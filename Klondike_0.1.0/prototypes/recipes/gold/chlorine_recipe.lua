@@ -4,7 +4,7 @@ data:extend(
     type = "recipe",
     name = "chlorine-recipe",
     category = "chemistry",
-    enabled = true,
+    enabled = false,
     energy_required = 10,
     ingredients =
     {

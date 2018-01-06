@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "goulash-recipe",
 		category = "food",
-		enabled = true,
+		enabled = false,
 		energy_required = 60,
 		ingredients =
 		{

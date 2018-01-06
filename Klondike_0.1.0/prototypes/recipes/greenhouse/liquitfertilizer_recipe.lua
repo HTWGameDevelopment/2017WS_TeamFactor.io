@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "liquitfertilizer-recipe",
 		category = "chemistry",
-		enabled = true,
+		enabled = false,
 		energy_required = 20,
 		ingredients =
 		{

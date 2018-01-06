@@ -4,7 +4,7 @@ data:extend(
     type = "recipe",
     name = "soysouce-recipe",
     category = "chemistry",
-    enabled = true,
+    enabled = false,
     energy_required = 20,
     ingredients =
     {

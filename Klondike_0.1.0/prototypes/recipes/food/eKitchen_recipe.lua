@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "eKitchen-recipe",
-		enabled = true,
+		enabled = false,
 		energy_required = 15,
 		ingredients =
 		{

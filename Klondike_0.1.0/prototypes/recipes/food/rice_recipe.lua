@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "rice-recipe",
 		category = "mill",
-		enabled = true,
+		enabled = false,
 		energy_required = 5,
 		ingredients =
 		{

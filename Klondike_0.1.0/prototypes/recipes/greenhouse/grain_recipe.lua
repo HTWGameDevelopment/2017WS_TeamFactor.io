@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "grain-recipe",
 		category = "greenhouse",
-		enabled = true,
+		enabled = false,
 		energy_required = 25,
 		ingredients =
 		{

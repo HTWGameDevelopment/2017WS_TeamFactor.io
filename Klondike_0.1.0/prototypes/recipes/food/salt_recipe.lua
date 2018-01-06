@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "salt-recipe",
 		category = "chemistry",
-		enabled = true,
+		enabled = false,
 		energy_required = 40,
 		ingredients =
 		{

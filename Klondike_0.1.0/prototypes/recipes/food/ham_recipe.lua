@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "ham-recipe",
 		category = "food",
-		enabled = true,
+		enabled = false,
 		energy_required = 90,
 		ingredients =
 		{

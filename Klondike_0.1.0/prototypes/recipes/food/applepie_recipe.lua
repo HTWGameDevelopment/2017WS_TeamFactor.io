@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "applepie-recipe",
 		category = "food",
-		enabled = true,
+		enabled = false,
 		energy_required = 45,
 		ingredients =
 		{

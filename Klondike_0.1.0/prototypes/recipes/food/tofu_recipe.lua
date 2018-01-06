@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "tofu-recipe",
 		category = "food",
-		enabled = true,
+		enabled = false,
 		energy_required = 30,
 		ingredients =
 		{

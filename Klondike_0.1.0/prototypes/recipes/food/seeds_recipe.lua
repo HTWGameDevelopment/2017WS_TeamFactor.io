@@ -2,7 +2,7 @@ data:extend({
   {
     type = "recipe",
     name = "seeds-recipe",    
-    enabled = true,
+    enabled = false,
     energy_required = 3,
     ingredients =
     {

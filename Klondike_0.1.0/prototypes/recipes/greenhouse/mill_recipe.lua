@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "mill-recipe",		
-		enabled = true,
+		enabled = false,
 		energy_required = 30,
 		ingredients =
 		{

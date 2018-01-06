@@ -41,7 +41,7 @@ data:extend(
       module_slots = 3
     },
     allowed_effects = {"speed", "productivity", "pollution"},
-    crafting_categories = {"greenhouse"},
+    crafting_categories = {"simplegreenhouse", "greenhouse"},
     crafting_speed = 1,
     energy_source =
     {      

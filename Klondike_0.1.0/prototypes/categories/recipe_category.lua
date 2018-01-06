@@ -6,6 +6,11 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "simplegreenhouse"
+  -- done in greenhouse
+  },
+  {
+    type = "recipe-category",
     name = "greenhouse"
 	-- done in greenhouse
   },

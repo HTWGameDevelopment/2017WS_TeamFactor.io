@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "fast-processing-unit-recipe",
 		category = "advanced-crafting",
-		enabled = true,
+		enabled = false,
 		energy_required = 10,
 		ingredients =
 		{

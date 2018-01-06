@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "sand-recipe",
 		category = "mill",
-		enabled = true,
+		enabled = false,
 		energy_required = 3,
 		ingredients =
 		{
