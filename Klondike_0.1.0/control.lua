@@ -23,16 +23,16 @@ require("events.hunger.on_robot_mined_entity")
 
 function initialize()
 	if global.klondike == nil then
-
 		global.klondike = {}
-
 		global.klondike.player = {}
+		global.klondike.tick = {}
 	end
 end
 
 function create_player_data(index)
 	if global.klondike.player[index] == nil then
-		HUNGER_PERIODIC_TICK = SCHEITELPUNKT/2 + SCHIEBER
+		global.klondike.tick[index] = SCHEITELPUNKT/2 + SCHIEBER
+		--HUNGER_PERIODIC_TICK = SCHEITELPUNKT/2 + SCHIEBER
 		player_property_update("fix", index, "hunger_value", 100)
 		player_property_update("fix", index, "ticks", 0) --tickrate
 	end
