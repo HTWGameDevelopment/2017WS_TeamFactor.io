@@ -19,7 +19,7 @@ data:extend(
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = -1,
-        pipe_connections = {{ type="input", position = {0, -3} }},
+        pipe_connections = {{ type="input", position = {0, -2.9} }},
         secondary_draw_orders = { north = -1 }
       },
       {
@@ -28,14 +28,14 @@ data:extend(
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = 1,
-        pipe_connections = {{ type="output", position = {0, 3} }},
+        pipe_connections = {{ type="output", position = {0, 2.9} }},
         secondary_draw_orders = { north = -1 }
       },
       off_when_no_fluid_recipe = true
     },
 
     collision_box = {{-2.5, -2.4}, {2.5, 2.4}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    selection_box = {{-2.0, -2.0}, {2.0, 2.0}},
     module_specification =
     {
       module_slots = 3
@@ -56,7 +56,7 @@ data:extend(
     animation ={
       layers={
         {
-          filename = "__Klondike__/graphics/entities/greenhouse.png",
+          filename = "__Klondike__/graphics/entities/simple-greenhouse.png",
           width = 225,
           height = 225,
           frame_count = 1,
