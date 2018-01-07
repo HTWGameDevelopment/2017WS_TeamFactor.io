@@ -62,7 +62,7 @@ data:extend(
           frame_count = 1,
           line_length = 1,
 	        animation_speed = 1 / 3,
-          shift = {0.5, 0}    
+          shift = {0, 0}    
 	     },
 	   }
     },

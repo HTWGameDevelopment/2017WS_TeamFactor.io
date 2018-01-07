@@ -39,30 +39,30 @@ function create_player_data(index)
 end
 
 function player_property_update(mode, index, name, v)
-	if global.klondike.player[index] == nil then
-		global.klondike.player[index] = {}
-	end
-	if mode == "increase" then
-		global.klondike.player[index][name] = global.klondike.player[index][name] + v
-	end
-	if mode == "decrease" then
-		global.klondike.player[index][name] = global.klondike.player[index][name] - v
-	end
-	if mode == "fix" then
-		global.klondike.player[index][name] = v
+	if HUNGER_IMPLEMENT then
+		if global.klondike.player[index] == nil then
+			global.klondike.player[index] = {}
+		end
+		if mode == "increase" then
+			global.klondike.player[index][name] = global.klondike.player[index][name] + v
+		end
+		if mode == "decrease" then
+			global.klondike.player[index][name] = global.klondike.player[index][name] - v
+		end
+		if mode == "fix" then
+			global.klondike.player[index][name] = v
+		end
 	end
 	--Ober- und Untergrenze jeder Eigenschaft
-	if name == "hunger_value" then
-		if HUNGER_IMPLEMENT then
+	if name == "hunger_value" and HUNGER_IMPLEMENT then
+		
 			if global.klondike.player[index][name] > 100 then
 				global.klondike.player[index][name] = 100
 			end
 			if global.klondike.player[index][name] < 0 then
 				global.klondike.player[index][name] = 0
 			end
-		else
-			global.klondike.player[index][name] = 100
-		end
+		
 	end
 end
 

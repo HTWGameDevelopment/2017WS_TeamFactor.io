@@ -10,8 +10,8 @@ data:extend(
     max_health = 300,
 	  corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    collision_box = {{-1.0, -0.8}, {0.0, 1.0}},
-    selection_box = {{-1.1, -1.0}, {0.0, 1.3}},
+    collision_box = {{-0.5, -0.9}, {0.6, 1.0}},
+    selection_box = {{-0.7, -1.1}, {0.8, 1.2}},
     module_specification =
     {
       module_slots = 2
@@ -36,7 +36,7 @@ data:extend(
           frame_count = 4,
           line_length = 2,
           animation_speed = 0.2,
-          shift = {0, 0}
+          shift = {0.5, 0}
         },
       }
     },

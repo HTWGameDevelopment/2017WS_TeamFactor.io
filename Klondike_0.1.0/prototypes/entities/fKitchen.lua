@@ -10,8 +10,8 @@ data:extend(
     max_health = 300,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",    
-    collision_box = {{-0.5, -0.4}, {1.6, 1.1}},
-    selection_box = {{-0.7, -0.7}, {1.6, 0.9}},
+    collision_box = {{-1.1, -1.0}, {1.1, 1.0}},
+    selection_box = {{-1.2, -1.0}, {1.2, 1.0}},
     
     allowed_effects = {"speed", "productivity", "pollution"},
     crafting_categories = {"food"},
@@ -35,7 +35,7 @@ data:extend(
           frame_count = 1,
           line_length = 1,
 	        animation_speed = 1 / 3,
-          shift = {0.5, 0}    
+          shift = {0, 0}    
 	     },
 	   }
     },

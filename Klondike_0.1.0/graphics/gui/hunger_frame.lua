@@ -1,11 +1,11 @@
 --Function to create the hunger gui
 
 function hunger_gui_check(player_index)
-	local player = game.players[player_index]
-	local player_data = global.klondike.player[player_index]
-	local hunger_progress_value = player_data.hunger_value / 100
-	if player.connected == true then
-		if HUNGER_IMPLEMENT then
+	if HUNGER_IMPLEMENT then
+		local player = game.players[player_index]
+		local player_data = global.klondike.player[player_index]
+		local hunger_progress_value = player_data.hunger_value / 100
+		if player.connected == true then		
 			if player.gui.top.hunger_indicator == nil then
 				player.gui.top.add {
 					type = "frame",
