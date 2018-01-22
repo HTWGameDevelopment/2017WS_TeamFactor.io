@@ -5,7 +5,6 @@ require("graphics.gui.hunger_frame")
 
 --logic
 require("logic.hungerspeed_sigmoid_function")
-require("logic.walkspeed_sigmoid_function")
 
 --events
 require("events.hunger.on_player_created")
@@ -34,7 +33,7 @@ function create_player_data(index)
 	if global.klondike.player[index] == nil then
 		global.klondike.tick[index] = SCHEITELPUNKT/2 + SCHIEBER
 		--HUNGER_PERIODIC_TICK = SCHEITELPUNKT/2 + SCHIEBER
-		player_property_update("fix", index, "hunger_value", HUNGER_MAX_VALUE)
+		player_property_update("fix", index, "hunger_value", 100)
 		player_property_update("fix", index, "ticks", 0) --tickrate
 	end
 end
@@ -57,8 +56,8 @@ function player_property_update(mode, index, name, v)
 	--Ober- und Untergrenze jeder Eigenschaft
 	if name == "hunger_value" and HUNGER_IMPLEMENT then
 		
-			if global.klondike.player[index][name] > HUNGER_MAX_VALUE then
-				global.klondike.player[index][name] = HUNGER_MAX_VALUE
+			if global.klondike.player[index][name] > 100 then
+				global.klondike.player[index][name] = 100
 			end
 			if global.klondike.player[index][name] < 0 then
 				global.klondike.player[index][name] = 0
@@ -75,11 +74,11 @@ function player_damage(index, v)
 	end
 end
 
-function player_fatigue(index, v, modifier)
-	if v < 30 then
-		game.players[index].character_running_speed_modifier = -modifier
+function player_fatigue(index, v)
+	if v < 20 then
+		game.players[index].character_running_speed_modifier = -0.5
 	else
-		game.players[index].character_running_speed_modifier = modifier
+		game.players[index].character_running_speed_modifier = 0
 	end
 end
 
