@@ -86,6 +86,7 @@ end
 script.on_init(function()
 	if settings.startup["hunger-enabled"].value == true then
 		HUNGER_IMPLEMENT = true
+		DIFFICULTY_SETTING = settings.startup["hunger-difficulty"].value
         initialize()
     else
     	HUNGER_IMPLEMENT = false
@@ -95,6 +96,7 @@ end)
 script.on_load(function()
 	if settings.startup["hunger-enabled"].value == true then
 		HUNGER_IMPLEMENT = true
+		DIFFICULTY_SETTING = settings.startup["hunger-difficulty"].value
         initialize()
     else
     	HUNGER_IMPLEMENT = false

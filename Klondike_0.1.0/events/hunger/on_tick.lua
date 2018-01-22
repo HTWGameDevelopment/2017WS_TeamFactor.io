@@ -14,7 +14,7 @@ script.on_event(defines.events.on_tick, function(event)
 						global.klondike.tick[index] = hungerspeed_sigmoid(HUNGER_MAX_VALUE - global.klondike.player[index].hunger_value)
 					end				
 				end
-				player_fatigue(index, global.klondike.player[index].hunger_value, walkspeed_sigmoid(HUNGER_MAX_VALUE - global.klondike.player[index].hunger_value))
+				--player_fatigue(index, global.klondike.player[index].hunger_value, walkspeed_sigmoid(HUNGER_MAX_VALUE - global.klondike.player[index].hunger_value))
 			end
 		end
 	end
