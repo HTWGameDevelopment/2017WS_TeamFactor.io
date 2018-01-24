@@ -4,7 +4,7 @@ function hunger_gui_check(player_index)
 	if HUNGER_IMPLEMENT then
 		local player = game.players[player_index]
 		local player_data = global.klondike.player[player_index]
-		local hunger_progress_value = player_data.hunger_value / 100
+		local hunger_progress_value = player_data.hunger_value / MAXIMUM_HEALTH
 		if player.connected == true then		
 			if player.gui.top.hunger_indicator == nil then
 				player.gui.top.add {
@@ -24,7 +24,7 @@ function hunger_gui_check(player_index)
 				player.gui.top.hunger_indicator.hunger_contents.add {
 					type = "progressbar",
 					name = "hunger_value",
-					size = 100.0
+					size = MAXIMUM_HEALTH
 				}
 			end
 			player.gui.top.hunger_indicator.hunger_contents.hunger_value.value = hunger_progress_value
