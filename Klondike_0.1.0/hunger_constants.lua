@@ -2,6 +2,7 @@ HUNGER_IMPLEMENT = true
 DIFFICULTY_VALUE = 0
 
 MAXIMUM_HUNGER = 150.0
+HUNGER_OVERLOAD = 170.0
 
 --Determining variable for the hunger difficulty
 --EASY = 0 | MEDIUM = 1 | HARD = 2

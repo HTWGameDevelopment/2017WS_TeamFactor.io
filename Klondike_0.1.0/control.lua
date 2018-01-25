@@ -56,8 +56,8 @@ function player_property_update(mode, index, name, v)
 	--Ober- und Untergrenze jeder Eigenschaft
 	if name == "hunger_value" and HUNGER_IMPLEMENT then
 		
-			if global.klondike.player[index][name] > MAXIMUM_HUNGER then
-				global.klondike.player[index][name] = MAXIMUM_HUNGER
+			if global.klondike.player[index][name] > HUNGER_OVERLOAD then
+				global.klondike.player[index][name] = HUNGER_OVERLOAD
 			end
 			if global.klondike.player[index][name] < 0 then
 				global.klondike.player[index][name] = 0
@@ -78,6 +78,8 @@ function player_fatigue(index, v)
 	if v < 30 then
 		--game.players[index].character_running_speed_modifier = -0.5
 		game.players[index].character_running_speed_modifier = v*(1/60)-0.5
+	elseif v > MAXIMUM_HUNGER then
+		game.players[index].character_running_speed_modifier = v*(-1/80)+1
 	else
 		game.players[index].character_running_speed_modifier = 0
 	end
