@@ -11,7 +11,7 @@ script.on_event(defines.events.on_tick, function(event)
 						player_property_update("decrease", index, "hunger_value", HUNGER_DECREASE)
 						hunger_gui_check(index)
 						
-						global.klondike.tick[index] = hungerspeed_sigmoid(MAXIMUM_HEALTH - global.klondike.player[index].hunger_value)
+						global.klondike.tick[index] = hungerspeed_sigmoid(MAXIMUM_HUNGER - global.klondike.player[index].hunger_value)
 					end				
 				end
 				player_fatigue(index, global.klondike.player[index].hunger_value)

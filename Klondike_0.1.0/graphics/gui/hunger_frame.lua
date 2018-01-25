@@ -4,7 +4,7 @@ function hunger_gui_check(player_index)
 	if HUNGER_IMPLEMENT then
 		local player = game.players[player_index]
 		local player_data = global.klondike.player[player_index]
-		local hunger_progress_value = player_data.hunger_value / MAXIMUM_HEALTH
+		local hunger_progress_value = player_data.hunger_value / MAXIMUM_HUNGER
 		if player.connected == true then		
 			if player.gui.top.hunger_indicator == nil then
 				player.gui.top.add {

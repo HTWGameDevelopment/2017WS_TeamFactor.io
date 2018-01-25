@@ -33,7 +33,7 @@ function create_player_data(index)
 	if global.klondike.player[index] == nil then
 		global.klondike.tick[index] = SCHEITELPUNKT/2 + SCHIEBER
 		--HUNGER_PERIODIC_TICK = SCHEITELPUNKT/2 + SCHIEBER
-		player_property_update("fix", index, "hunger_value", MAXIMUM_HEALTH)
+		player_property_update("fix", index, "hunger_value", MAXIMUM_HUNGER)
 		player_property_update("fix", index, "ticks", 0) --tickrate
 	end
 end
@@ -56,8 +56,8 @@ function player_property_update(mode, index, name, v)
 	--Ober- und Untergrenze jeder Eigenschaft
 	if name == "hunger_value" and HUNGER_IMPLEMENT then
 		
-			if global.klondike.player[index][name] > MAXIMUM_HEALTH then
-				global.klondike.player[index][name] = MAXIMUM_HEALTH
+			if global.klondike.player[index][name] > MAXIMUM_HUNGER then
+				global.klondike.player[index][name] = MAXIMUM_HUNGER
 			end
 			if global.klondike.player[index][name] < 0 then
 				global.klondike.player[index][name] = 0
