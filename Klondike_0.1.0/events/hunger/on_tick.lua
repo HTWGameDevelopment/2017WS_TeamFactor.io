@@ -12,9 +12,13 @@ script.on_event(defines.events.on_tick, function(event)
 						hunger_gui_check(index)
 						
 						global.klondike.tick[index] = hungerspeed_sigmoid(MAXIMUM_HUNGER - global.klondike.player[index].hunger_value)
+
 					end				
 				end
+				if game.players[index] ~= nil then
 				player_fatigue(index, global.klondike.player[index].hunger_value)
+				player.print(index)
+				end
 			end
 		end
 	end
