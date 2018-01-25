@@ -75,16 +75,14 @@ function player_damage(index, v)
 end
 
 function player_fatigue(index, v)
-	--game.players[index].character_running_speed_modifier = 0
-	--[[if v < 30 then
+	if v < 30 then
 		--game.players[index].character_running_speed_modifier = -0.5
 		game.players[index].character_running_speed_modifier = v*(1/60)-0.5
 	elseif v > MAXIMUM_HUNGER then
 		game.players[index].character_running_speed_modifier = (MAXIMUM_HUNGER-v)*(-1/200)+1
 	else
 		game.players[index].character_running_speed_modifier = 0
-	end]]--
-	
+	end	
 end
 
 script.on_init(function()
