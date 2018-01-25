@@ -24,7 +24,7 @@ function hunger_gui_check(player_index)
 				player.gui.top.hunger_indicator.hunger_contents.add {
 					type = "progressbar",
 					name = "hunger_value",
-					size = MAXIMUM_HEALTH
+					size = MAXIMUM_HUNGER
 				}
 			end
 			player.gui.top.hunger_indicator.hunger_contents.hunger_value.value = hunger_progress_value
