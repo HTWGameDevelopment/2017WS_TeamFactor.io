@@ -15,10 +15,17 @@ script.on_event(defines.events.on_tick, function(event)
 						
 					end				
 				end
+<<<<<<< HEAD
 				--if game.players[index] ~= nil then
 				--	player.print(index)
 					player_fatigue(index, global.klondike.player[index].hunger_value)			
 				--end
+=======
+				if game.players[index] ~= nil then
+					player.print(index)
+					player_fatigue(index, global.klondike.player[index].hunger_value)			
+				end
+>>>>>>> 308056be01b923875b6d216ea2566ca42771f1e5
 			end
 		end
 	end
