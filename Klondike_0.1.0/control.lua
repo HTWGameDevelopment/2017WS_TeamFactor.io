@@ -7,6 +7,7 @@ require("graphics.gui.hunger_frame")
 require("logic.hungerspeed_sigmoid_function")
 
 --events
+require("events.hunger.on_pre_player_died")
 require("events.hunger.on_player_created")
 require("events.hunger.on_player_respawned")
 require("events.hunger.on_player_mined_tile")
@@ -52,6 +53,7 @@ function player_property_update(mode, index, name, v)
 		if mode == "fix" then
 			global.klondike.player[index][name] = v
 		end
+
 	end
 	--Ober- und Untergrenze jeder Eigenschaft
 	if name == "hunger_value" and HUNGER_IMPLEMENT then
@@ -62,11 +64,11 @@ function player_property_update(mode, index, name, v)
 			if global.klondike.player[index][name] < 0 then
 				global.klondike.player[index][name] = 0
 			end
-		
 	end
 end
 
 function player_damage(index, v)
+
 	if game.players[index].character.health > v then
 		game.players[index].character.health = game.players[index].character.health - v
 	else
@@ -75,14 +77,24 @@ function player_damage(index, v)
 end
 
 function player_fatigue(index, v)
-	if v < 30 then
-		--game.players[index].character_running_speed_modifier = -0.5
-		game.players[index].character_running_speed_modifier = v*(1/60)-0.5
-	elseif v > MAXIMUM_HUNGER then
-		game.players[index].character_running_speed_modifier = 1.1 --v*(1/80)+1
-	else
-		game.players[index].character_running_speed_modifier = 0
-	end
+
+	if (DEATH == 0) then
+		if v < 30 then
+			--game.players[index].character_running_speed_modifier = -0.5
+			game.print("lowering speed...")
+			game.players[index].character_running_speed_modifier = v*(1/60)-0.5
+			game.print("speed lowered!")
+		elseif v > MAXIMUM_HUNGER then
+			game.print("increasing speed...")
+			game.players[index].character_running_speed_modifier = (MAXIMUM_HUNGER-v)*(-1/200)+1
+			game.print("speed increased!")
+
+		else
+			game.print("normalizing speed...")
+			game.players[index].character_running_speed_modifier = 0
+			game.print("speed normalized!")
+		end
+	end	
 end
 
 script.on_init(function()
