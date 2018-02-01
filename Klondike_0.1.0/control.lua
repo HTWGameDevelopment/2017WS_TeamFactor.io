@@ -81,18 +81,18 @@ function player_fatigue(index, v)
 	if (DEATH == 0) then
 		if v < 30 then
 			--game.players[index].character_running_speed_modifier = -0.5
-			game.print("lowering speed...")
+			--game.print("lowering speed...")
 			game.players[index].character_running_speed_modifier = v*(1/60)-0.5
-			game.print("speed lowered!")
+			--game.print("speed lowered!")
 		elseif v > MAXIMUM_HUNGER then
-			game.print("increasing speed...")
+			--game.print("increasing speed...")
 			game.players[index].character_running_speed_modifier = (MAXIMUM_HUNGER-v)*(-1/200)+1
-			game.print("speed increased!")
+			--game.print("speed increased!")
 
 		else
-			game.print("normalizing speed...")
+			--game.print("normalizing speed...")
 			game.players[index].character_running_speed_modifier = 0
-			game.print("speed normalized!")
+			--game.print("speed normalized!")
 		end
 	end
 end
